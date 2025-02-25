@@ -420,9 +420,9 @@ chip *initialize_emulator(int argc, char **argv)
 	return emulator;
 }
 
-void check_valid_program(int argc, char **argv)	// Input should be exactly one program file
+void check_valid_program(int argc, char **argv)
 {
-	// Ensure that the user specifies one input file
+	// Ensure that the user specifies one input file, and optionally, the debug flag
 	if (argc < 2)
 	{
 		printf("Error: No input file.\n");
@@ -434,7 +434,7 @@ void check_valid_program(int argc, char **argv)	// Input should be exactly one p
 		
 		printf("Debug enabled.\n");
 	}
-	else if (argc != 2)
+	else if (argc > 3)
 	{
 		printf("Error: Too many inputs\n");
 		exit(1);
@@ -1162,7 +1162,7 @@ void draw(chip *emulator)
 	square.w = (WIDTH / 64) - 1;
 	square.h = (HEIGHT / 32) - 1;
 
-	// This solution is far from the most efficient, but it eliminates any issues with flickering or buffers
+	// This solution is far from efficient, but it eliminates any issues with flickering or buffers
 	for (int i = 0; i < 64; ++i)
 	{
 		for (int j = 0; j < 32; ++j)
