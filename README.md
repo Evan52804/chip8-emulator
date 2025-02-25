@@ -14,7 +14,6 @@ I am almost certain that not everything works as expected, and I am trying to fi
 - [ ] Add sound
 - [ ] Improve comments
 - [ ] Improve terminal output
-- [ ] Remove unnecessary imports
 - [ ] Add additional customizations
 
 ___
