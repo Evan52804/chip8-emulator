@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdint.h>
-#include <unistd.h>
 #include "SDL3/SDL.h"
 
 #define WIDTH 1920
@@ -14,12 +13,6 @@
 
 typedef struct chip
 {
-	// Flags
-	bool ORIGINAL_SHIFT;
-	bool ORIGINAL_JUMP_OFFSET;
-	bool ORIGINAL_STORE_LOAD;
-
-	// Components
 	uint8_t keypad[0xF];
 	uint8_t memory[4096];
 	int PC;
