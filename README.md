@@ -12,7 +12,6 @@ I am almost certain that not everything works as expected, and I am trying to fi
 ##### To-do
 
 - [ ] Add sound
-- [ ] Improve comments
 - [ ] Improve terminal output
 - [ ] Add additional customizations
 
