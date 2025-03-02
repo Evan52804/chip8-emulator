@@ -2,7 +2,7 @@
 ___
 ### Description
 
-Just a simple Chip-8 interpreter written as an introduction to coding emulators. Graphics are displayed using SDL. At first, I used raylib, but SDL ended up working better.
+Just a simple Chip-8 interpreter written as an introduction to coding emulators. Graphics are displayed using SDL.
 
 The emulator supports toggling certain behaviors for ambiguous instructions, but doing so can cause certain roms to behave unexpectedly, or crash.
 It also supports pausing, changing speed, and toggling debug mode. All of this can be done during runtime.
