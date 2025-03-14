@@ -2,7 +2,7 @@
 ___
 ### Description
 
-Just a simple Chip-8 interpreter written as an introduction to coding emulators. Graphics are displayed using SDL.
+A simple Chip-8 interpreter written as an introduction to coding emulators. Graphics are displayed using SDL.
 
 The emulator supports toggling certain behaviors for ambiguous instructions, but doing so can cause certain roms to behave unexpectedly, or crash.
 It also supports pausing, changing speed, and toggling debug mode. All of this can be done during runtime.
@@ -14,11 +14,12 @@ I am almost certain that not everything works as expected, and I am trying to fi
 - [ ] Add sound
 - [ ] Improve terminal output
 - [ ] Add additional customizations
+- [ ] Improve comments
 
 ___
 ### Usage
 
-The program will compile into an executable called `run`. To run the emulator on Linux, use `./run <PATH_TO_ROM> <DEBUG_FLAG>`.
+The program is compiled using `make`. It will compile into an executable called `run`. To run the emulator on Linux, use `./run <PATH_TO_ROM> <DEBUG_FLAG>`.
 It is not necessary to provide a debug flag. The program will run with only the file path, with debug disabled by default.
 
 ##### Controls
