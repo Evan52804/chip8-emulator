@@ -9,7 +9,6 @@ bool PAUSE = 0;
 uint RATE = 700;
 int FPS = 60;
 
-
 // SDL components
 SDL_Window *window;
 SDL_Renderer *renderer;
